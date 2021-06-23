@@ -1,0 +1,86 @@
+body {
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  box-shadow: 0 4px 2px -2px rgb(0 0 0 / 10%);
+  padding: 10px 30px;
+}
+
+header h1 {
+  margin: 0 1.5rem;
+  font-size: 1.4rem;
+  align-items: center;
+  display: flex;
+}
+
+header a {
+  text-decoration: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  color: #003366;
+  font-family: Tahoma;
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+}
+
+header a:hover {
+  background-color: #34495e;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.container {
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 30px;
+}
+
+ul {
+  color: #333333;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.rounded {
+  border-radius: 15px;
+}
+
+h1,
+.box > h2 {
+  color: #003366;
+  font-family: Tahoma;
+}
+
+.box > h2 {
+  font-size: 1.1rem;
+}
+
+.brief {
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: "Trebuchet MS";
+}
+
+.box .flex-item {
+  margin: 0 10px;
+  border-radius: 15px;
+  color: #ffffff;
+}
+
+.box .flex-item.happy {
+  background-color: #05a357;
+}
+
+.box .flex-item.sad {
+  background-color: #34495e;
+}
+
+.flex-item p {
+  text-align: center;
+}

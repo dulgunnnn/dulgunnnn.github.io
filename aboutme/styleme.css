@@ -3,6 +3,17 @@ body {
   margin: 0;
   padding: 0;
 }
+p::first-letter {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 
 header {
   box-shadow: 0 4px 2px -2px rgb(0 0 0 / 10%);
@@ -31,6 +42,7 @@ header a:hover {
   background-color: #34495e;
   color: #ffffff;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .container {

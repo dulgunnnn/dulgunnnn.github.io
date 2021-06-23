@@ -93,6 +93,18 @@ h1,
   background-color: #34495e;
 }
 
+.box dl {
+  margin: 0.5rem 1rem;
+  font-family: Georgia;
+  border-left: 1px solid #d6d6d6;
+  padding-left: 1rem;
+}
+
+.box dl dt {
+  color: #666666;
+  font-weight: 600;
+}
+
 .flex-item p {
   text-align: center;
 }

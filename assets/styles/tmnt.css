@@ -28,7 +28,7 @@ aside {
   height: auto;
 }
 
-section {
+.section {
   background-image: url("/assets/images/tmnt/rbg.png");
 }
 
@@ -101,7 +101,7 @@ article .quote p:nth-child(2) {
   margin-bottom: 1.5rem;
 }
 
-section span {
+.section span {
   color: red;
   font-size: 3rem;
 }

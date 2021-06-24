@@ -32,7 +32,7 @@ aside {
   background-image: url("/assets/images/tmnt/rbg.png");
 }
 
-article {
+.article {
   background: transparent;
   display: flex;
   justify-content: space-around;
@@ -74,29 +74,29 @@ dl > dd > ul {
   align-items: center;
 }
 
-article p {
+.article p {
 }
 
-article .quote {
+.article .quote {
   width: 90%;
   margin: 0 auto;
 }
 
-article .quote p:first-child {
+.article .quote p:first-child {
   border: 2px solid #6d6d6d;
   border-radius: 10px;
   padding: 10px;
 }
 
-article .quote p img {
+.article .quote p img {
   float: left;
 }
 
-article .quote p:first-child q {
+.article .quote p:first-child q {
   font-weight: bold;
 }
 
-article .quote p:nth-child(2) {
+.article .quote p:nth-child(2) {
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
 }

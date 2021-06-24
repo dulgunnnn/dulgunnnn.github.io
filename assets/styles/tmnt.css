@@ -127,5 +127,6 @@ dl > dd > ul {
 }
 
 .validators {
+  float: right;
   opacity: 0.5;
 }

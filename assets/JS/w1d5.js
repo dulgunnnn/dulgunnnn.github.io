@@ -63,15 +63,16 @@ function isVowel(char) {
   );
 }
 console.log(
-  "Expected output of isVowel('A') is true  " +
-    myFunctionTest(true, isVowel("A"))
+  "Expected output of isVowel('O') is true  " +
+    myFunctionTest(true, isVowel("O"))
 );
 console.log(
-  "Expected output of isVowel('B') is false  " +
-    myFunctionTest(false, isVowel("B"))
+  "Expected output of isVowel('a') is false  " +
+    myFunctionTest(false, isVowel("a"))
 );
 
 function sum(arr) {
+  console.assert(arr.length > 0, "Array should not be null.");
   let sum = 0;
   arr.map((item) => (sum += item));
   return sum;
@@ -79,13 +80,14 @@ function sum(arr) {
 const arr = [1, 2, 3, 4];
 const arr2 = [2, 8, 7, 3, 9, 11];
 console.log(
-  "Expected output of sum(arr) is 10  " + myFunctionTest(10, sum(arr))
+  "Expected output of sum(arr) is 10  " + myFunctionTest(10, sum([]))
 );
 console.log(
   "Expected output of sum(arr2) is 40  " + myFunctionTest(41, sum(arr2))
 );
 
 function multiply(arr) {
+  console.assert(arr.length > 0, "Array should not be null.");
   let multiply = 1;
   arr.map((item) => (multiply *= item));
   return multiply;
@@ -117,6 +119,7 @@ console.log(
 );
 
 function findLongestWord(arr) {
+  console.assert(arr.length > 0, "Array should not be null.");
   max = arr[0].length;
   arr.map((item) => {
     if (item.length > max) max = item.length;
@@ -144,11 +147,12 @@ console.log(
 );
 
 function filterLongWords(arr, i) {
+  console.assert(arr.length > 0, "Array should not be null.");
   let result = [];
   arr.map((item) => {
     if (item.length > i) result[result.length] = item;
   });
-  console.assert("result");
+
   return result;
 }
 
@@ -167,20 +171,22 @@ console.log(
     )
 );
 
-// jsfiddle codes
-console.log("--------------------");
+// ----- jsfiddle codes below -----
 
 const a = [1, 3, 5, 3, 3];
 const b = a.map(function (elem, i, array) {
   return elem * 10;
 });
+document.writeln(
+  "There are JSFiddle results here and previous all function results are in console. <br/>------------<br/>"
+);
 document.writeln(b.toString() + "<br/>");
 const c = a.filter(function (elem, i, array) {
   return elem === 3;
 });
 document.writeln(c.toString() + "<br/>");
 const d = a.reduce(function (prevValue, elem, i, array) {
-  return prevValue + elem;
+  return prevValue * elem;
 });
 document.writeln(d + "<br/>");
 
@@ -191,4 +197,4 @@ const d3 = a.findIndex(function (elem) {
   return elem > 1;
 }); //1
 document.writeln(d2 + "<br/>");
-document.writeln(d3 + "<br/>");
+document.writeln(d3 + "<br/>------------<br/>");

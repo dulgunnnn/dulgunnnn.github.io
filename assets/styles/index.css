@@ -1,12 +1,8 @@
 body {
   font-family: Helvetica, sans-serif;
-  background-color: #f8f8f8;
+  background-color: #f0f0f0;
 }
 
-h1 {
-  color: #333333;
-}
-
-img {
-  border-radius: 25px;
+li a {
+  text-decoration: none;
 }

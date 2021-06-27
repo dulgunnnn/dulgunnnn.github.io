@@ -5,29 +5,42 @@
     <meta charset="utf-8">
     <title>Dulguun Portfolio</title>
     <link rel="stylesheet" href="assets/styles/index.css">
+    <link rel="stylesheet" href="assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
 </head>
 
 <body>
-    <h1>Dulguun Lkhagvabaatar</h1>
-    <div>
-        <img src="assets/images/dulguun.jpg" alt="Profile picture" height="300">
+    <div class="bg-secondary">
+        <div class="container d-flex align-items-center pt-5 pb-2">
+            <div class="rounded-circle overflow-hidden me-3"><img src="assets/images/dulguun.jpg" alt="Profile picture"
+                    class="h-auto"></div>
+            <h1 class="text-white">Dulguun Lkhagvabaatar</h1>
+        </div>
     </div>
-    <ul>
-        <li><a href="/">W1D1 - This homepage</a></li>
-        <li><a href="aboutme">W1D2 - About me</a></li>
-        <li><a href="w1d2recipe">W1D2 - Recipe</a></li>
-        <li><a href="tmnt">W1D3 - TMNT (2007)</a></li>
-        <li><a href="responsive-layout">W1D4 - Responsive Layout(CSS)</a></li>
-        <li><a href="responsive-layout-bootstrap">W1D4 - Responsive Layout(Bootstrap)</a></li>
-        <li><a href="w1d5">W1D5 - Javascript Basics</a></li>
-        <li>W1D6 - MP3 Library</li>
-        <li>W1D6 - Movie Review PHP</li>
-    </ul>
-    <p>
-        <a href="https://validator.w3.org/check/referer"> <img src="assets/images/w3c-html.png" alt="html validator" />
-            <!-- used w3c-html.png from local because its origin has not SSL -->
-        </a>
-    </p>
+    <div class="container">
+        <div class="my-3 p-3 bg-body rounded shadow-sm">
+            <h6 class="border-bottom pb-2 mb-0">WAP Labs</h6>
+
+            <ul>
+                <li class="d-flex text-muted py-2 border-bottom"><a href="/">W1D1 - This homepage</a></li>
+                <li class="d-flex text-muted py-2 border-bottom"><a href="aboutme">W1D2 - About me</a></li>
+                <li class="d-flex text-muted py-2 border-bottom"><a href="w1d2recipe">W1D2 - Recipe</a></li>
+                <li class="d-flex text-muted py-2 border-bottom"><a href="tmnt">W1D3 - TMNT (2007)</a></li>
+                <li class="d-flex text-muted py-2 border-bottom"><a href="responsive-layout">W1D4 - Responsive
+                        Layout(CSS)</a></li>
+                <li class="d-flex text-muted py-2 border-bottom"><a href="responsive-layout-bootstrap">W1D4 - Responsive
+                        Layout(Bootstrap)</a></li>
+                <li class="d-flex text-muted py-2 border-bottom"><a href="w1d5">W1D5 - Javascript Basics</a></li>
+                <li class="d-flex text-muted py-2 border-bottom"><a href="w1d6">W1D6 - Decorate and Animate</a></li>
+            </ul>
+        </div>
+
+        <footer class="text-end">
+            <a href="https://validator.w3.org/check/referer"> <img src="assets/images/w3c-html.png"
+                    alt="html validator" />
+                <!-- used w3c-html.png from local because its origin has not SSL -->
+            </a>
+        </footer>
+    </div>
 
 </body>
 

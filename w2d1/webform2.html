@@ -9,32 +9,57 @@
 </head>
 
 <body>
-    <div class="container pt-4">
+    <header class="p-2 bg-primary text-white">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start p-1">
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#" class="nav-link px-4 py-1 text-white fs-5">MUM Golden Dome Market : : : SRM System</a>
+                </li>
+                <li><a href="#" class="nav-link px-4 text-white border-start">Products</a></li>
+                <li><a href="#" class="nav-link px-4 text-white border-start">Suppliers</a></li>
+            </ul>
 
-
-        <form>
-            <div class="form-group">
-                <label for="url">Website URL</label>
-                <input type="text" class="form-control" id="url" aria-describedby="url"
-                    placeholder="http:// or https://">
+            <div class="d-flex align-items-center">
+                <span class="me-2">Hello!</span>
+                <button type="button" class="btn btn-light ms-1">Sign out</button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h1 class="fs-3 fw-normal my-4">New Product Form</h1>
+        <form class="row g-3">
+            <div class="col-6">
+                <label for="inputPNumber" class="form-label">Product Number</label>
+                <input type="text" class="form-control" id="inputPNumber">
+            </div>
+            <div class="col-6">
+                <label for="inputQuantity" class="form-label">Quantity in stock</label>
+                <input type="number" class="form-control" id="inputQuantity">
+            </div>
+            <div class="col-6">
+                <label for="inputName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="inputName">
+            </div>
+            <div class="col-6">
+                <label for="inputSupplier" class="form-label">Supplier:</label>
+                <select id="inputSupplier" class="form-select">
+                    <option selected>Select supplier...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="col-6">
+                <label for="inputPrice" class="form-label">Unit Price</label>
+                <input type="number" class="form-control" id="inputPrice">
+            </div>
+            <div class="col-6">
+                <label for="inputDate" class="form-label">Date supplied</label>
+                <input type="date" class="form-control" id="inputDate">
             </div>
 
-            <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                    else.</small>
+            <div class="col-12 text-end">
+                <button type="submit" class="btn btn-outline-secondary">Reset</button>
+                <button type="submit" class="btn btn-outline-danger ms-4">Cancel</button>
+                <button type="submit" class="btn btn-outline-primary ms-4">Add Product</button>
             </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            </div>
-            <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
 </body>

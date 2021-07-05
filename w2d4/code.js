@@ -1,21 +1,3 @@
-function earliestSpace(str1, str2, str3) {
-  let lowest = null;
-  let lowestNumber = null;
-
-  for (let i = 0; i < arguments.length; i++) {
-    if (lowest === null) {
-      lowest = arguments[i];
-      lowestNumber = arguments[i].indexOf(" ");
-    }
-
-    if (lowestNumber > arguments[i].indexOf(" ")) {
-      lowest = arguments[i];
-      lowestNumber = arguments[i].indexOf(" ");
-    }
-  }
-  return lowest;
-}
-
 /* Exercise 1:
 Define a filter function on the String object. The function accepts an array of strings that
 specifies a list of banned words. The function returns the string after removing all the

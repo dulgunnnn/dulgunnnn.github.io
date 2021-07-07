@@ -36,6 +36,42 @@
             }
             return lowest;
         }
+
+
+
+
+
+
+
+        class Computer {
+            constructor(ram, cpu, storage) {
+                this._ram = ram;
+                this._cpu = cpu;
+                this._storage = storage;
+            }
+
+            runProgram(program) {
+                console.log("running: " + program);
+            }
+        }
+
+        class Laptop extends Computer {
+            constructor(ram, cpu, storage, battery) {
+                super(ram, cpu, storage);
+                this._battery = battery;
+            }
+
+            carryAround() {
+                console.log("carrying laptop:  cpu: " + this._cpu + " ram: " + this._ram + " storage: " + this._storage + " battery: " + this._battery)
+            }
+        }
+
+        let com = new Computer("32gb", "i7", "500gb")
+        console.log(com._cpu)
+
+        let lap = new Laptop("8gb", "i5", "240gb", "battery2");
+        lap.runProgram("VS code")
+        lap.carryAround()
     </script>
     <script>
         describe("earliestSpace", function () {
